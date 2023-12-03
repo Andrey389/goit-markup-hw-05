@@ -378,18 +378,23 @@
             </div>
             <div class="page-footer-subscribe">
                 <p class="page-footer-subscribe-text">Subscribe</p>
-                <input 
-                    class="page-footer-input" 
-                    id="user-email" 
-                    name="user-email" 
-                    type="email" 
-                    placeholder="Email"/>
-            </div>
-            <div class="page-footer-btn">
-                <button class="page-footer-button">Subscribe</button>
-                <svg class="page-footer-btn-icon" width="24" height="20" aria-label="send icon">
-                    <use href="./images/icons.svg#icon-send"></use>
-                </svg>
+                <form class="page-footer-form">
+                    <label class="page-footer-label" for="user-email">
+                        <input 
+                            class="page-footer-input" 
+                            id="user-email" 
+                            name="user-email" 
+                            type="email" 
+                            placeholder="Email"
+                        />
+                    </label>
+                    <button class="page-footer-button" type="submit">
+                        Subscribe
+                        <svg class="page-footer-btn-icon" width="24" height="24" aria-label="send icon">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
@@ -414,7 +419,7 @@
                             title="Andrey"
                             required
                         />
-                        <svg class="review-form-input-icon" width="18" height="18" aria-label="icon user">
+                        <svg class="review-form-input-icon" width="18" height="24" aria-label="icon user">
                             <use href="./images/icons.svg#icon-user"></use>
                         </svg>
                     </div>
@@ -464,17 +469,17 @@
                 <div class="review-form-wrapper-checkbox">
                     <input 
                         class="review-form-checkbox visually-hidden" 
-                        id="user-privacy-policy" 
-                        name="user-privacy-policy" 
+                        id="user-privacy" 
+                        name="user-privacy" 
                         type="checkbox" 
                         value="true"
                         required
                     />
-                    <label class="review-form-label" for="user-privacy-policy"><span class="review-form-own-checkbox"><svg class="review-form-checkbox-icon" width="10" height="8" aria-label="check mark icon">
+                    <label class="review-form-label" for="user-privacy"><span class="review-form-own-checkbox"><svg class="review-form-checkbox-icon" width="10" height="8" aria-label="check mark icon">
                         <use href="./images/icons.svg#icon-check-mark"></use>
                     </svg></span>I accept the terms and conditions of the <a class="accent-color-check-mark" href="">Privacy Policy</a></label>
                 </div>
-                <button class="review-form-submit-btn" type="submit">Send</button>
+                <button class="review-form-submit-btn" type="button">Send</button>
             </form>
         </div>
     </div>
