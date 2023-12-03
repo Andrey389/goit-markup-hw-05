@@ -540,6 +540,7 @@ body {
 .modal-close-btn:focus {
     background-color: #404BBF;
     fill: #FFFFFF;
+    border: none;
 }
 .review-form-discription {
     text-align: center;
@@ -590,6 +591,9 @@ body {
 .review-form-input:focus + .review-form-input-icon {
     fill: #4D5AE5;
 }
+.review-form-wrapper-margin {
+    margin-bottom: 16px;
+}
 .review-form-comment {
     color: rgba(46, 47, 66, 0.40);
     font-size: 12px;
@@ -611,9 +615,6 @@ body {
 }
 .review-form-comment:focus {
     border-color: #4D5AE5;
-}
-.review-form-wrapper-checkbox {
-    margin-bottom: 16px;
 }
 .review-form-own-checkbox {
     display: inline-flex;
